@@ -9,7 +9,7 @@ import (
 	"os/user"
 )
 
-var configPath = getAppFolder() + "config.yml"
+var configPath = "config.yml"
 
 func readConfig() map[string]interface{} {
 	f, err := ioutil.ReadFile(configPath)
